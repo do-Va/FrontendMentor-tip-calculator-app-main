@@ -131,7 +131,7 @@ const Wrapper = styled.form`
       gap: 16px;
 
       .input {
-        width: 155px;
+        width: 140px;
         height: 50px;
 
         &::placeholder {
