@@ -20,7 +20,7 @@ const Result = ({ tipAmount, total, resetState }) => {
             <h3>Total</h3>
             <p>/ person</p>
           </div>
-          <p className="price">${total}</p>
+          <p className="price">${total.toFixed(2)}</p>
         </div>
       </div>
       <button onClick={handleClick}>RESET</button>
