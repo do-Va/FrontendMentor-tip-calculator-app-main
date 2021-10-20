@@ -10,6 +10,7 @@ const Form = ({ calculateTip }) => {
   const [price, setPrice] = useState(0);
   const [people, setPeople] = useState(0);
   const [tip, setTip] = useState(0);
+  const [customPercentage, setCustomPercentage] = useState('');
   const [isValidation, setIsValidation] = useState(true);
   const percentages = ['5', '10', '15', '25', '50'];
 
@@ -17,7 +18,7 @@ const Form = ({ calculateTip }) => {
     e.preventDefault();
 
     if (isValid(people)) {
-      calculateTip(price, tip, people);
+      calculateTip(price, customPercentage !== tip && customPercentage && customPercentage, people);
       setIsValidation(true);
     } else {
       setIsValidation(false);
@@ -48,7 +49,7 @@ const Form = ({ calculateTip }) => {
           <input
             type="text"
             placeholder="Custom"
-            onChange={e => setTip(e.target.value)}
+            onChange={e => setCustomPercentage(e.target.value)}
             className="input"
           />
         </div>
