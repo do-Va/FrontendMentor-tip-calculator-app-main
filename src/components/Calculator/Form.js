@@ -137,6 +137,10 @@ const Wrapper = styled.form`
         &::placeholder {
           text-align: center;
         }
+        
+        @media only screen and (min-width: 375px) {
+          width: 155px;
+        }
       }
     }
 
