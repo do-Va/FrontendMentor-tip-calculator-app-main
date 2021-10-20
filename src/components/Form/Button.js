@@ -10,7 +10,7 @@ const Button = ({ percentage, setTip }) => {
 };
 
 const Wrapper = styled.button`
-  width: 155px;
+  width: 140px;
 
   background: var(--clr-secondary-bg);
   color: var(--clr-main-f);
