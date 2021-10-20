@@ -19,6 +19,10 @@ const Wrapper = styled.button`
     background: var(--clr-strong-f);
     color: var(--clr-secondary-bg);
   }
+  
+  @media only screen and (min-width: 375px) {
+    width: 155px;
+  }
 `;
 
 export default Button;
